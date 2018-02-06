@@ -1,0 +1,23 @@
+buildscript {
+    ext.kotlin_version = '1.2.21'
+
+    repositories {
+        google()
+        jcenter()
+    }
+    dependencies {
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+        classpath 'com.android.tools.build:gradle:3.0.1'
+        // if you comment out the line above and `include ':myapplication'` in settings.gradle,
+        // Android part will become not imported, but output paths will be correct
+    }
+}
+
+allprojects {
+    repositories {
+        jcenter()
+    }
+}
+
+group 'grp'
+version '1.0-SNAPSHOT'

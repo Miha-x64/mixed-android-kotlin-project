@@ -1,0 +1,3 @@
+rootProject.name = 'art'
+include ':art2'
+include ':myapplication' // comment me out along with Android Gradle plug-in
